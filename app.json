@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "react-native-design-system-validator",
+    "slug": "react-native-design-system-validator",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "web": { "bundler": "metro", "favicon": "./assets/favicon.svg" }
+  }
+}

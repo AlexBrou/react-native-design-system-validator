@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="t d">
+  <title id="t">React Design System Validator (Material Design 3)</title>
+  <desc id="d">Design rules that run like tests. A phone mockup shows two buttons with a correct 8dp gap and two buttons with a 3px gap flagged as a violation, above a terminal running the design check.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#21005D" flood-opacity="0.16"/>
+    </filter>
+    <filter id="shadow-sm" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1D1B20" flood-opacity="0.28"/>
+    </filter>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0H0V16" fill="none" stroke="#6750A4" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <style>
+    text { font-family: Roboto, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif; }
+    .mono { font-family: "JetBrains Mono", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+  </style>
+
+  <!-- background -->
+  <rect width="1280" height="640" fill="#FEF7FF"/>
+  <rect width="1280" height="640" fill="url(#grid)"/>
+  <circle cx="1130" cy="90" r="230" fill="#EADDFF"/>
+  <circle cx="660" cy="660" r="150" fill="#E8DEF8"/>
+  <rect x="-60" y="-60" width="200" height="200" rx="56" fill="#FFD8E4" transform="rotate(18 40 40)"/>
+
+  <!-- left: copy -->
+  <g transform="translate(80 0)">
+    <rect x="0" y="150" width="380" height="36" rx="18" fill="#E8DEF8"/>
+    <text x="190" y="174" text-anchor="middle" font-size="16" font-weight="500" fill="#4A4458" letter-spacing="0.4">MATERIAL DESIGN 3 · REACT NATIVE</text>
+
+    <text x="0" y="262" font-size="64" font-weight="500" fill="#1D1B20" letter-spacing="-0.5">Design-System</text>
+    <text x="0" y="338" font-size="64" font-weight="500" fill="#6750A4" letter-spacing="-0.5">Validator</text>
+
+    <text x="0" y="398" font-size="26" fill="#49454F">Design rules that run like tests,</text>
+    <text x="0" y="434" font-size="26" fill="#49454F">for apps built with AI agents.</text>
+
+    <g font-size="16" font-weight="500" fill="#4A4458">
+      <rect x="0" y="478" width="96" height="36" rx="8" fill="none" stroke="#79747E"/>
+      <text x="48" y="502" text-anchor="middle">ESLint</text>
+      <rect x="108" y="478" width="122" height="36" rx="8" fill="none" stroke="#79747E"/>
+      <text x="169" y="502" text-anchor="middle">Playwright</text>
+      <rect x="242" y="478" width="96" height="36" rx="8" fill="none" stroke="#79747E"/>
+      <text x="290" y="502" text-anchor="middle">Paper</text>
+      <rect x="350" y="478" width="140" height="36" rx="8" fill="none" stroke="#79747E"/>
+      <text x="420" y="502" text-anchor="middle">Claude Code</text>
+    </g>
+  </g>
+
+  <!-- right: phone -->
+  <g transform="translate(740 64)" filter="url(#shadow)">
+    <rect width="400" height="480" rx="40" fill="#FFFFFF"/>
+  </g>
+  <g transform="translate(740 64)">
+    <!-- app bar -->
+    <rect x="28" y="40" width="24" height="3" rx="1.5" fill="#49454F"/>
+    <text x="72" y="50" font-size="22" fill="#1D1B20">Checkout</text>
+
+    <!-- row 1: correct -->
+    <text x="28" y="108" font-size="14" font-weight="500" fill="#49454F" letter-spacing="0.1">FOLLOWS M3</text>
+    <rect x="28" y="124" width="132" height="40" rx="20" fill="none" stroke="#79747E"/>
+    <text x="94" y="149" text-anchor="middle" font-size="14" font-weight="500" fill="#6750A4">Cancel</text>
+    <rect x="168" y="124" width="132" height="40" rx="20" fill="#6750A4"/>
+    <text x="234" y="149" text-anchor="middle" font-size="14" font-weight="500" fill="#FFFFFF">Pay now</text>
+    <!-- 8dp measurement -->
+    <rect x="160" y="116" width="8" height="56" fill="#146C2E" fill-opacity="0.28"/>
+    <path d="M164 172v22" stroke="#146C2E" stroke-width="2"/>
+    <rect x="128" y="194" width="72" height="26" rx="13" fill="#C4EED0"/>
+    <text x="164" y="212" text-anchor="middle" font-size="13" font-weight="500" fill="#0A3818">✓ 8dp</text>
+    <circle cx="336" cy="144" r="18" fill="#C4EED0"/>
+    <path d="M327 144l6 6 12-12" stroke="#146C2E" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- divider -->
+    <rect x="28" y="244" width="344" height="1" fill="#CAC4D0"/>
+
+    <!-- row 2: violation -->
+    <text x="28" y="282" font-size="14" font-weight="500" fill="#49454F" letter-spacing="0.1">BREAKS M3</text>
+    <rect x="28" y="298" width="132" height="40" rx="20" fill="#6750A4"/>
+    <text x="94" y="323" text-anchor="middle" font-size="14" font-weight="500" fill="#FFFFFF">Pay now</text>
+    <rect x="163" y="300" width="132" height="36" rx="4" fill="#6750A4"/>
+    <text x="229" y="323" text-anchor="middle" font-size="14" font-weight="500" fill="#FFFFFF">Pay later</text>
+    <rect x="22" y="292" width="279" height="52" rx="8" fill="none" stroke="#B3261E" stroke-width="2.5" stroke-dasharray="7 5"/>
+    <rect x="160" y="290" width="3" height="56" fill="#B3261E" fill-opacity="0.45"/>
+    <path d="M161.5 346v8" stroke="#B3261E" stroke-width="2"/>
+    <rect x="64" y="354" width="196" height="26" rx="13" fill="#F9DEDC"/>
+    <text x="162" y="372" text-anchor="middle" font-size="13" font-weight="500" fill="#410E0B">✕ 3px apart · 36px tall</text>
+    <circle cx="336" cy="318" r="18" fill="#F9DEDC"/>
+    <path d="M329 311l14 14M343 311l-14 14" stroke="#B3261E" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- fab -->
+    <rect x="316" y="400" width="56" height="56" rx="16" fill="#EADDFF"/>
+    <path d="M344 418v20M334 428h20" stroke="#21005D" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- terminal -->
+  <g transform="translate(608 466)" filter="url(#shadow-sm)">
+    <rect width="460" height="148" rx="16" fill="#1D1B20"/>
+  </g>
+  <g transform="translate(608 466)" class="mono" font-size="15">
+    <circle cx="24" cy="22" r="5" fill="#FF5F57"/>
+    <circle cx="42" cy="22" r="5" fill="#FEBC2E"/>
+    <circle cx="60" cy="22" r="5" fill="#28C840"/>
+    <text x="24" y="60" class="mono" fill="#CAC4D0">$ npm run design:check:llm</text>
+    <text x="24" y="90" class="mono" fill="#F2B8B5">✕ 38:11 button-gap: 3px, expected 8px</text>
+    <text x="24" y="116" class="mono" fill="#F2B8B5">✕ 38:11 component-size: 36px, M3 = 40</text>
+    <text x="24" y="134" class="mono" fill="#938F99" font-size="12">  src/screens/Checkout.jsx</text>
+  </g>
+</svg>
